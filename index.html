@@ -5,9 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đội Ngũ Của Chúng Tôi</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Adjusted for dark theme */
+            z-index: 1;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #D8B4FE, #A5F3FC); /* Light purple to light cyan gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card {
+            background: #1A1A1A; /* Darker card for contrast */
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            min-height: 350px;
+            width: 100%;
+        }
+        .card:hover {
+            transform: scale(1.05) rotate(2deg); /* Motion effect */
+            box-shadow: 0 0 20px rgba(216, 180, 254, 0.8), 0 0 40px rgba(165, 243, 252, 0.6); /* Bright purple and cyan glow */
+            filter: brightness(1.1);
+        }
+        .avatar {
+            border-radius: 50%;
+            object-fit: cover;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover .avatar {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(216, 180, 254, 0.7); /* Bright purple glow for avatar */
+        }
+        .cv-button {
+            display: block;
+            margin: 1rem auto;
+            padding: 0.5rem 1.5rem;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background 0.3s ease;
+            width: fit-content;
+        }
+        .cv-button:hover {
+            background: linear-gradient(45deg, #ff8787, #66e0d9);
+        }
+    </style>
 </head>
-<body class="bg-black text-white min-h-screen flex flex-col items-center relative">
+<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center relative">
     <!-- Particle Background -->
     <div id="particles-js"></div>
     <div class="overlay"></div>
@@ -15,33 +80,33 @@
     <!-- Header -->
     <header class="text-center py-12 relative z-10">
         <h1 class="text-4xl font-bold gradient-text">Nhóm của chúng tôi</h1>
-        <p class="mt-2 text-gray-400">Gặp gỡ những thành viên của chúng tôi</p>
+        <p class="mt-2 text-gray-300">Gặp gỡ những thành viên của chúng tôi</p>
     </header>
 
     <!-- Main Content -->
-    <main class="max-w-6xl px-6 py-8 relative z-10">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <main class="max-w-7xl px-6 py-8 relative z-10 w-full">
+        <div class="grid grid-cols-4 gap-8">
             <!-- Member 1 -->
             <div class="card">
-                <img src="assets/TrinhMinhTien.jpg" alt="Trịnh Minh Tiến" class="avatar mx-auto w-32 h-32 object-cover">
+                <img src="assets/TrinhMinhTien.jpg" alt="Trịnh Minh Tiến" class="avatar mx-auto">
                 <h2 class="text-lg font-semibold mt-4 text-center">Trịnh Minh Tiến</h2>
                 <p class="text-gray-400 mt-2 text-center">Frontend Developer</p>
-                <p class="text-gray-500 text-sm mt-1 text-center">27/02/2005</p>
+                <p class="text-gray-500 text-sm mt-1 text-center">05/02/2005</p>
                 <p class="text-gray-500 text-sm mt-1 text-center">Sinh Viên Năm 2</p>
                 <a href="cv/TrinhMinhTien.html" target="_blank" class="cv-button">Xem CV</a>
             </div>
             <!-- Member 2 -->
             <div class="card">
-                <img src="assets/NguyenVanChiVi.jpg" alt="Nguyễn Văn Chí Vĩ" class="avatar mx-auto w-32 h-32 object-cover">
+                <img src="assets/NguyenVanChiVi.jpg" alt="Nguyễn Văn Chí Vĩ" class="avatar mx-auto">
                 <h2 class="text-lg font-semibold mt-4 text-center">Nguyễn Văn Chí Vĩ</h2>
                 <p class="text-gray-400 mt-2 text-center">Fullstack Developer</p>
-                <p class="text-gray-500 text-sm mt-1 text-center">27/02/2005</p>
+                <p class="text-gray-500 text-sm mt-1 text-center">28/06/2005</p>
                 <p class="text-gray-500 text-sm mt-1 text-center">Sinh Viên Năm 2</p>
                 <a href="cv/NguyenVanChiVi.html" target="_blank" class="cv-button">Xem CV</a>
             </div>
             <!-- Member 3 -->
             <div class="card">
-                <img src="assets/NguyenVanHao.jpg" alt="Nguyễn Văn Hào" class="avatar mx-auto w-32 h-32 object-cover">
+                <img src="assets/NguyenVanHao.jpg" alt="Nguyễn Văn Hào" class="avatar mx-auto">
                 <h2 class="text-lg font-semibold mt-4 text-center">Nguyễn Văn Hào</h2>
                 <p class="text-gray-400 mt-2 text-center">Backend Developer</p>
                 <p class="text-gray-500 text-sm mt-1 text-center">27/02/2005</p>
@@ -50,7 +115,7 @@
             </div>
             <!-- Member 4 -->
             <div class="card">
-                <img src="assets/HongAnh.jpg" alt="Phan Hồng Anh" class="avatar mx-auto w-32 h-32 object-cover">
+                <img src="assets/HongAnh.jpg" alt="Phan Hồng Anh" class="avatar mx-auto">
                 <h2 class="text-lg font-semibold mt-4 text-center">Phan Hồng Anh</h2>
                 <p class="text-gray-400 mt-2 text-center">Project Manager</p>
                 <p class="text-gray-500 text-sm mt-1 text-center">27/02/2005</p>
@@ -61,7 +126,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="mt-auto w-full bg-gray-900 text-center py-4 relative z-10">
+    <footer class="mt-auto w-full bg-gray-800 text-center py-4 relative z-10">
         <p>© 2025 Đội Ngũ. All rights reserved.</p>
     </footer>
 
@@ -73,10 +138,10 @@
                 number: { value: 80, density: { enable: true, value_area: 800 } },
                 color: { value: '#ffffff' },
                 shape: { type: 'circle' },
-                opacity: { value: 0.5, random: true },
+                opacity: { value: 0.5, random: false },
                 size: { value: 3, random: true },
                 line_linked: { enable: true, distance: 150, color: '#ffffff', opacity: 0.4, width: 1 },
-                move: { enable: true, speed: 2, direction: 'none', random: true, straight: false, out_mode: 'out', bounce: false }
+                move: { enable: true, speed: 2, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
             },
             interactivity: {
                 detect_on: 'canvas',
