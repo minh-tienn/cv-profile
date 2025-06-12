@@ -65,6 +65,38 @@
 </head>
 <body class="min-h-screen flex justify-center items-start py-8 px-4">
     <div class="container max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-6">
+       <a href="../index.html" class="back-button" title="Quay lại Trang chủ">
+  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24">
+    <path d="M15 18l-6-6 6-6" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</a>
+
+<style>
+  .back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 55px;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+    transition: background 0.3s ease, transform 0.2s ease;
+    z-index: 1000;
+  }
+
+  .back-button:hover {
+    background: rgba(255, 255, 255, 0.22);
+    transform: scale(1.05);
+  }
+</style>
+
         <!-- Sidebar -->
         <aside class="sidebar">
             <!-- Profile -->
@@ -108,6 +140,7 @@
                 <p class="mb-2">Tiếng Anh: A2 (Cơ bản)</p>
             </div>
         </aside>
+        
 
         <!-- Main Content -->
         <main class="md:col-span-2">
