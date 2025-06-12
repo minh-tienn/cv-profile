@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Trịnh Minh Tiến</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a202c, #2d3748);
+            color: #e2e8f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .sidebar {
+            background: #2d3748;
+            border-radius: 10px;
+            padding: 20px;
+            height: fit-content;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #ff6b6b, #ff8e53);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .section-title {
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+        }
+        .card {
+            background: #4a5568;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(74, 144, 226, 0.3);
+        }
+        .progress-bar {
+            background: #e2e8f0;
+            border-radius: 9999px;
+            height: 8px;
+            overflow: hidden;
+        }
+        .progress {
+            background: #4a90e2;
+            height: 100%;
+            transition: width 0.5s ease;
+        }
+        .avatar {
+            border: 4px solid #4a90e2;
+            border-radius: 50%;
+        }
+        a {
+            color: #4a90e2;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #50c878;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex justify-center items-start py-8 px-4">
+    <div class="container max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Profile -->
+            <div class="card">
+                <img src="../assets/TrinhMinhTien.jpg" alt="Trịnh Minh Tiến" class="avatar mx-auto w-32 h-32 object-cover">
+                <h1 class="text-2xl font-bold mt-4 gradient-text">Trịnh Minh Tiến</h1>
+                <p class="text-gray-400">Sinh Viên Công nghệ Thông tin</p>
+            </div>
+            <!-- Contact Info -->
+            <div class="mt-6">
+                <h2 class="text-lg font-semibold section-title">Thông Tin Liên Hệ</h2>
+                <p class="flex items-center mb-2"><span class="mr-2">📧</span> tientrinh050205@gmail.com</p>
+                <p class="flex items-center mb-2"><span class="mr-2">📞</span> 0907799316</p>
+                <p class="flex items-center mb-2"><span class="mr-2">🌐</span> <a href="https://github.com/minh-tienn" target="_blank">https://github.com/minh-tienn</a></p>
+                <p class="flex items-center"><span class="mr-2">📍</span> Đồng Tháp, Việt Nam</p>
+            </div>
+            <!-- Skills -->
+            <div class="mt-6">
+                <h2 class="text-lg font-semibold section-title">Kỹ Năng</h2>
+                <div class="mb-2">
+                    <p class="flex justify-between"><span>HTML & CSS</span><span>85%</span></p>
+                    <div class="progress-bar"><div class="progress w-[85%]"></div></div>
+                </div>
+                <div class="mb-2">
+                    <p class="flex justify-between"><span>JavaScript</span><span>70%</span></p>
+                    <div class="progress-bar"><div class="progress w-[70%]"></div></div>
+                </div>
+                <div class="mb-2">
+                    <p class="flex justify-between"><span>Python</span><span>65%</span></p>
+                    <div class="progress-bar"><div class="progress w-[65%]"></div></div>
+                </div>
+                <div class="mb-2">
+                    <p class="flex justify-between"><span>Git</span><span>60%</span></p>
+                    <div class="progress-bar"><div class="progress w-[60%]"></div></div>
+                </div>
+            </div>
+            <!-- Languages -->
+            <div class="mt-6">
+                <h2 class="text-lg font-semibold section-title">Ngôn Ngữ</h2>
+                <p class="mb-2">Tiếng Việt: Thành thạo</p>
+                <p class="mb-2">Tiếng Anh: A2 (Cơ bản)</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="md:col-span-2">
+            <!-- About -->
+            <section class="card">
+                <h2 class="text-xl font-semibold section-title">Giới Thiệu</h2>
+                <p>Tôi là sinh viên năm 2 ngành Công nghệ Thông tin tại Đại học Giao thông Vận tải TP.HCM. Đam mê lập trình web và phát triển phần mềm, tôi đang nỗ lực học hỏi và tích lũy kinh nghiệm qua các dự án cá nhân và hoạt động ngoại khóa. Mục tiêu của tôi là trở thành một lập trình viên Fullstack chuyên nghiệp.</p>
+            </section>
+            <!-- Education -->
+            <section class="card">
+                <h2 class="text-xl font-semibold section-title">Học Vấn</h2>
+                <div class="mb-4">
+                    <h3 class="font-semibold">Cử nhân Công nghệ Thông tin</h3>
+                    <p class="text-gray-400">Đại học Giao thông Vận tải TP.HCM | 2023 - Hiện tại</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold">Khóa học Lập trình Cơ bản</h3>
+                </div>
+            </section>
+            <!-- Projects -->
+            <section class="card">
+                <h2 class="text-xl font-semibold section-title">Dự Án</h2>
+                <div class="mb-4">
+                    <h3 class="font-semibold">Website Quản lý Lịch học</h3>
+                    <p class="text-gray-400">2024 | <a href="https://github.com/minh-tienn" target="_blank">GitHub</a></p>
+                    <p>Một website đơn giản giúp sinh viên quản lý lịch học và ghi chú, sử dụng HTML, CSS, và JavaScript.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold">Ứng dụng Tính toán Đơn giản</h3>
+                    <p class="text-gray-400">2023 | <a href="https://github.com/minh-tienn" target="_blank">GitHub</a></p>
+                    <p>Một ứng dụng máy tính cơ bản được viết bằng Python, hỗ trợ các phép toán cơ bản.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
