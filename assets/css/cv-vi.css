@@ -1,0 +1,173 @@
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #e2e8f0;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+}
+
+.avatar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 4px solid #3b82f6;
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3b82f6;
+  margin: 0;
+  text-align: center;
+}
+
+.subtitle {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.row-cards {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin-top: 24px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  color: #3b82f6;
+  margin-bottom: 12px;
+}
+
+.card p, .card li {
+  font-size: 1rem;
+  color: #e2e8f0;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.card-full {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.card-full h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #3b82f6;
+}
+
+.card-full p {
+  font-size: 1.1rem;
+  color: #e2e8f0;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  border-left: 4px solid #3b82f6;
+  padding-left: 12px;
+  color: #3b82f6;
+}
+
+.progress-bar {
+  background: #334155;
+  border-radius: 100px;
+  height: 8px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.progress {
+  background: linear-gradient(90deg, #3b82f6, #2563eb);
+  height: 100%;
+  width: 70%; /* you can adjust per skill */
+  transition: width 0.3s ease;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.github-link a {
+  background: #ffffff;
+  color: #1e293b;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s;
+}
+
+.github-link a:hover {
+  background: #3b82f6;
+  color: #ffffff;
+  border-color: #3b82f6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .row-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .card-full {
+    width: 95%;
+  }
+}

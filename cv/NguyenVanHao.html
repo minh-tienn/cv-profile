@@ -1,13 +1,90 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Nguyễn Văn C - CV</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV - Nguyễn Văn Hào</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../assets/css/cv-hao.css">
 </head>
 <body>
-  <h1>Nguyễn Văn C</h1>
-  <p>Sinh viên ngành CNTT</p>
-  <p>Email: nguyenvana@gmail.com</p>
-  <p>Kỹ năng: HTML, CSS, JS</p>
+  <div class="video-background"></div>
+  <div class="main-wrapper">
+    <div class="avatar-wrapper">
+      <img src="../assets/image/NguyenVanHao.jpg" alt="Nguyễn Văn Hào" class="avatar">
+      <h1 class="name">Nguyễn Văn Hào</h1>
+      <p class="subtitle">Sinh viên Công nghệ Thông tin</p>
+    </div>
+    <div class="row-cards">
+      <div class="card">
+        <h2 class="section-title">Liên Hệ</h2>
+            <p>📧 haony1380@ut.edu.html</p>
+            <p>📞 0765700356</p>
+            <p>🌐 <a href="https://github.com/haonguyen3001" target="_blank">github.com/haonguyen3001</a></p>
+            <p>📍 Đồng Tháp, Việt Nam</p>
+      </div>
+      <div class="card">
+        <h2 class="section-title">Kỹ Năng</h2>
+        <p class="mb-1">HTML & CSS</p>
+        <div class="progress-bar"><div class="progress w-[85%]"></div></div>
+        <p class="mb-1 mt-2">JavaScript</p>
+        <div class="progress-bar"><div class="progress w-[70%]"></div></div>
+        <p class="mb-1 mt-2">Python</p>
+        <div class="progress-bar"><div class="progress w-[65%]"></div></div>
+        <p class="mb-1 mt-2">Git</p>
+        <div class="progress-bar"><div class="progress w-[60%]"></div></div>
+      </div>
+    </div>
+    <div class="card card-full">
+      <h2 class="section-title">Giới Thiệu</h2>
+        <p>
+        Tôi là sinh viên năm 2 ngành Công nghệ Thông tin tại Đại học Giao thông Vận tải TP.HCM.
+        Với niềm đam mê trong lĩnh vực phát triển web và phần mềm, tôi đang tích cực trau dồi kiến thức và kỹ năng thông qua việc tự học, tham gia các khóa học trực tuyến cũng như thực hiện các dự án cá nhân.
+        Tôi hướng đến mục tiêu trở thành một lập trình viên Fullstack có nền tảng vững chắc, đóng góp giá trị thực tế cho doanh nghiệp và xã hội.
+        </p>
+    </div>
+    <div class="row-cards">
+      <div class="card">
+        <h2 class="section-title">Học Vấn</h2>
+        <p class="font-semibold">🎓 Đại học Giao thông Vận tải TP.HCM</p>
+        <p class="text-gray-400 mb-2">Cử nhân Công nghệ Thông tin | 2023 - Nay</p>
+        <ul class="list-disc list-inside text-sm text-gray-600">
+        <li>GPA hiện tại: 3.0/4.0</li>
+        <li>Đã hoàn thành các môn: Nhập môn Lập trình, Cấu trúc dữ liệu & Giải thuật, Cơ sở dữ liệu</li>
+        </ul>
+        <ul class="list-disc list-inside text-sm text-gray-600">
+        <li>Lập trình Web căn bản (HTML, CSS, JS)</li>
+        <li>Git & GitHub cơ bản</li>
+        </ul>
+      </div>
+      <!--Hoc Van-->
+
+      <!--Du An-->
+      <div class="card">
+        <h2 class="section-title">Dự Án</h2>
+        <div class="card-content">
+        <p class="font-semibold">Website Đặt Sân Cầu Lông</p>
+        <div class="github-link">
+            <img src="../assets/image/icons.jpg" alt="GitHub" class="github-icon">
+            <a href="https://github.com/Minh2005tv/Nhom.1.git" target="_blank">GitHub</a>
+        </div>
+        <p class="text-sm text-gray-600">
+            Website giúp người dùng đặt sân cầu lông trực tuyến, quản lý lịch sử đặt sân và thanh toán trực tuyến.
+        </p>
+        </div>
+        <div class="card-content">
+        <p class="font-semibold">Website Giặt Ủi</p>
+        <div class="github-link">
+            <img src="../assets/image/icons.jpg" alt="GitHub" class="github-icon">
+            <a href="https://github.com/minhphung2911/Web_GiatUi.git" target="_blank">GitHub</a>
+        </div>
+        <p class="text-sm text-gray-600">
+            Website cung cấp dịch vụ giặt ủi trực tuyến, cho phép người dùng đặt lịch và thanh toán trực tuyến.
+        </p>
+        </div>
+    </div>
+    <!--Du An-->
+    
 </body>
 </html>
