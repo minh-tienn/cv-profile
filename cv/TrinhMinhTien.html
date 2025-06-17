@@ -1,96 +1,187 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CV - Trịnh Minh Tiến</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="../assets/css/cv-tien.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV của Trịnh Minh Tiến - Fullstack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/cv-tien.css" />
 </head>
 <body>
-  <a href="../index.html" class="back-button" title="Quay lại trang chủ">
-  <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-    <circle cx="28" cy="28" r="24" stroke="#38bdf8" stroke-width="3.5" fill="rgba(56,189,248,0.12)"/>
-    <path d="M34 16L22 28L34 40" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <a href="../index.html" id="back-button" class="cursor-pointer duration-200 hover:scale-125 active:scale-100" title="Quay lại trang tổng quan">
+  <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24" class="stroke-blue-300">
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" d="M11 6L5 12M5 12L11 18M5 12H19"></path>
   </svg>
 </a>
-  <div class="video-background"></div>
-  <div class="main-wrapper">
-    <div class="avatar-wrapper">
-      <img src="../assets/image/TrinhMinhTien.jpg" alt="Trịnh Minh Tiến" class="avatar">
-      <h1 class="name">Trịnh Minh Tiến</h1>
-      <p class="subtitle">Sinh viên Công nghệ Thông tin</p>
+    <button class="theme-toggle" title="Chuyển đổi chế độ sáng/tối"><i class="fas fa-moon"></i></button>
+    <div class="bg-particles"></div>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="header">
+                <div class="avatar">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1326/1326390.png" alt="Trịnh Minh Tiến">
+                </div>
+                <h1 class="name">Trịnh Minh Tiến</h1>
+                <p class="role">Fullstack Developer</p>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968534.png" alt="Email Icon">
+                    <span>tientrinh050205@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <img src="https://cdn-icons-png.flaticon.com/128/9946/9946341.png" alt="Phone Icon">
+                    <span>0907799316</span>
+                </div>
+                <div class="contact-item">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1865/1865269.png" alt="Location Icon">
+                    <span>Đồng Tháp, Việt Nam</span>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#about"><i class="fas fa-user"></i> Giới thiệu</a></li>
+                    <li><a href="#skills"><i class="fas fa-cogs"></i> Kỹ năng</a></li>
+                    <li><a href="#projects"><i class="fas fa-project-diagram"></i> Dự án</a></li>
+                    <li><a href="#education"><i class="fas fa-graduation-cap"></i> Học vấn</a></li>
+                    <li><a href="#hobbies"><i class="fas fa-heart"></i> Sở thích</a></li>
+                    <li><a href="#contact"><i class="fas fa-handshake"></i> Liên hệ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <section id="about" class="card">
+                <h2 class="card-title">Giới thiệu bản thân</h2>
+                <p class="about-text">
+                    Tôi là một Fullstack Developer đam mê sáng tạo giải pháp công nghệ. Với kinh nghiệm làm việc trên cả frontend và backend, tôi thành thạo Java, Python, JavaScript, cùng các framework như Spring Boot, Django, và Laravel. Tôi luôn sẵn sàng học hỏi và ứng dụng công nghệ mới để xây dựng sản phẩm chất lượng.
+                </p>
+            </section>
+            <section id="skills" class="card">
+                <h2 class="card-title">Kỹ năng chuyên môn</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Ngôn ngữ lập trình</h4>
+                        <div class="skill-item"><span>Java</span><div class="progress-bar"><div class="progress" style="width: 85%"></div></div></div>
+                        <div class="skill-item"><span>Python</span><div class="progress-bar"><div class="progress" style="width: 80%"></div></div></div>
+                        <div class="skill-item"><span>JavaScript</span><div class="progress-bar"><div class="progress" style="width: 75%"></div></div></div>
+                        <div class="skill-item"><span>C++</span><div class="progress-bar"><div class="progress" style="width: 70%"></div></div></div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Framework / Thư viện</h4>
+                        <div class="skill-item"><span>Spring Boot</span><div class="progress-bar"><div class="progress" style="width: 85%"></div></div></div>
+                        <div class="skill-item"><span>Laravel</span><div class="progress-bar"><div class="progress" style="width: 75%"></div></div></div>
+                        <div class="skill-item"><span>Django</span><div class="progress-bar"><div class="progress" style="width: 80%"></div></div></div>
+                        <div class="skill-item"><span>Bootstrap</span><div class="progress-bar"><div class="progress" style="width: 75%"></div></div></div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Cơ sở dữ liệu</h4>
+                        <div class="skill-item"><span>MySQL</span><div class="progress-bar"><div class="progress" style="width: 90%"></div></div></div>
+                        <div class="skill-item"><span>PostgreSQL</span><div class="progress-bar"><div class="progress" style="width: 85%"></div></div></div>
+                        <div class="skill-item"><span>MongoDB</span><div class="progress-bar"><div class="progress" style="width: 75%"></div></div></div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Công cụ & DevOps</h4>
+                        <div class="skill-item"><span>Git</span><div class="progress-bar"><div class="progress" style="width: 70%"></div></div></div>
+                        <div class="skill-item"><span>Docker</span><div class="progress-bar"><div class="progress" style="width: 65%"></div></div></div>
+                        <div class="skill-item"><span>RESTful API</span><div class="progress-bar"><div class="progress" style="width: 80%"></div></div></div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects" class="card">
+                <h2 class="card-title">Dự án nổi bật</h2>
+                <div class="projects-list">
+                    <div class="project">
+                        
+                        <div class="project-info">
+                            <h3 class="project-title">Hệ thống dịch vụ giặt ủi trực tuyến</h3>
+                            <p class="project-tech">Java • Spring Boot • MySQL • HTML/CSS/JS</p>
+                            <p class="project-description">
+                                Phát triển hệ thống giặt ủi trực tuyến với các tính năng quản lý người dùng, đặt lịch, và thanh toán.
+                            </p>
+                            <a href="https://github.com/minhphung2911/Web_GiatUi" class="project-link">Xem chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="https://chi-trung.github.io/CV/cv_nguyenchitrung/images/caulong1.jpg" alt="Ứng dụng quản lý sân cầu lông" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">Ứng dụng quản lý sân cầu lông</h3>
+                            <p class="project-tech">Python • Django • HTML/CSS • JavaScript</p>
+                            <p class="project-description">
+                                Ứng dụng web hỗ trợ đặt sân cầu lông, quản lý lịch, và thanh toán trực tuyến.
+                            </p>
+                            <a href="https://github.com/Minh2005tv/Nhom.1" class="project-link">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="education" class="card">
+                <h2 class="card-title">Học vấn</h2>
+                <div class="education-grid">
+                    <div class="education-item"><p><strong>MSSV:</strong> 087205009822</p></div>
+                    <div class="education-item"><p><strong>Bậc đào tạo:</strong> Đại học - Chính quy</p></div>
+                    <div class="education-item"><p><strong>GPA:</strong> 3.0/4</p></div>
+                    <div class="education-item"><p><strong>Khóa:</strong> 2023</p></div>
+                    <div class="education-item"><p><strong>Khoa:</strong> Viện Công nghệ Thông tin và Điện, Điện tử</p></div>
+                    <div class="education-item"><p><strong>Ngành:</strong> Công nghệ Thông tin</p></div>
+                </div>
+            </section>
+            <section id="hobbies" class="card">
+                <h2 class="card-title">Sở thích cá nhân</h2>
+                <div class="hobbies-grid">
+                    <div class="hobby-item"><i class="fas fa-film"></i><p>Xem phim</p></div>
+                    <div class="hobby-item"><i class="fas fa-gamepad"></i><p>Chơi game</p></div>
+                    <div class="hobby-item"><i class="fas fa-music"></i><p>Nghe nhạc</p></div>
+                    <div class="hobby-item"><i class="fas fa-code"></i><p>Lập trình</p></div>
+                </div>
+            </section>
+            <section id="contact" class="card">
+                <h2 class="card-title">Kết nối với tôi</h2>
+                <div id="SocailIcons">
+                    <div class="example-2">
+                        <div class="icon-content">
+                            <a href="https://github.com/minh-tienn" aria-label="GitHub" data-social="github">
+                                <div class="filled"></div>
+                                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                                </svg>
+                            </a>
+                            <div class="tooltip">GitHub</div>
+                        </div>
+                        <div class="icon-content">
+                            <a href="https://www.instagram.com/mtien_0502/" aria-label="Instagram" data-social="instagram">
+                                <div class="filled"></div>
+                                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 00-1.417.923A3.927 3.927 0 00.42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8s.01 2.445.048 3.299c.04.851.175 1.433.419 1.941.246.509.592 1.01 1.417 1.418.508.247 1.09.382 1.941.419C5.555 15.99 5.827 16 8 16s2.445-.01 3.299-.048c.851-.04 1.433-.174 1.941-.418a4.164 4.164 0 001.418-1.417c.244-.508.379-1.09.419-1.941.038-.854.048-1.126.048-3.299s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.419-1.941a3.918 3.918 0 00-1.418-1.418c-.508-.244-1.09-.379-1.941-.419C10.445.01 10.173 0 8 0zm0 1.952c2.174 0 2.444.01 3.298.048.757.034 1.167.16 1.439.266.363.141.623.324.897.6.275.275.458.534.6.897.106.272.232.682.266 1.439.038.854.048 1.125.048 3.298s-.01 2.444-.048 3.298c-.034.757-.16 1.167-.266 1.439-.141.363-.324.623-.6.897a2.45 2.45 0 01-.897.6c-.272.106-.682.232-1.439.266-.854.038-1.125.048-3.298.048s-2.444-.01-3.298-.048c-.757-.034-1.167-.16-1.439-.266a2.198 2.198 0 01-.897-.6 2.45 2.45 0 01-.6-.897c-.106-.272-.232-.682-.266-1.439-.038-.854-.048-1.125-.048-3.298s.01-2.444.048-3.298c.034-.757.16-1.167.266-1.439.141-.363.324-.623.6-.897.275-.275.534-.458.897-.6.272-.106.682-.232 1.439-.266.854-.038 1.125-.048 3.298-.048zm0 2.842a3.206 3.206 0 100 6.412 3.206 3.206 0 000-6.412zm0 5.297a2.091 2.091 0 110-4.182 2.091 2.091 0 010 4.182zm4.08-5.402a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"></path>
+                                </svg>
+                            </a>
+                            <div class="tooltip">Instagram</div>
+                        </div>
+                        <div class="icon-content">
+                            <a href="https://www.facebook.com/minhtien0502" aria-label="Facebook" data-social="facebook">
+                                <div class="filled"></div>
+                                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+                                </svg>
+                            </a>
+                            <div class="tooltip">Facebook</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
-    <div class="row-cards">
-      <div class="card">
-        <h2 class="section-title">Liên Hệ</h2>
-            <p>📧 tientrinh050205@gmail.com</p>
-            <p>📞 0907799316</p>
-            <p>🌐 <a href="https://github.com/minh-tienn" target="_blank">github.com/minh-tienn</a></p>
-            <p>📍 Đồng Tháp, Việt Nam</p>
-      </div>
-      <div class="card">
-        <h2 class="section-title">Kỹ Năng</h2>
-        <p class="mb-1">HTML & CSS</p>
-        <div class="progress-bar"><div class="progress w-[85%]"></div></div>
-        <p class="mb-1 mt-2">JavaScript</p>
-        <div class="progress-bar"><div class="progress w-[70%]"></div></div>
-        <p class="mb-1 mt-2">Python</p>
-        <div class="progress-bar"><div class="progress w-[65%]"></div></div>
-        <p class="mb-1 mt-2">Git</p>
-        <div class="progress-bar"><div class="progress w-[60%]"></div></div>
-      </div>
-    </div>
-    <div class="card card-full">
-      <h2 class="section-title">Giới Thiệu</h2>
-        <p>
-        Tôi là sinh viên năm 2 ngành Công nghệ Thông tin tại Đại học Giao thông Vận tải TP.HCM.
-        Với niềm đam mê trong lĩnh vực phát triển web và phần mềm, tôi đang tích cực trau dồi kiến thức và kỹ năng thông qua việc tự học, tham gia các khóa học trực tuyến cũng như thực hiện các dự án cá nhân.
-        Tôi hướng đến mục tiêu trở thành một lập trình viên Frontend Developer có nền tảng vững chắc, đóng góp giá trị thực tế cho doanh nghiệp và xã hội.
-        </p>
-    </div>
-    <div class="row-cards">
-      <div class="card">
-        <h2 class="section-title">Học Vấn</h2>
-        <p class="font-semibold">🎓 Đại học Giao thông Vận tải TP.HCM</p>
-        <p class="text-gray-400 mb-2">Cử nhân Công nghệ Thông tin | 2023 - Nay</p>
-        <ul class="list-disc list-inside text-sm text-gray-600">
-        <li>GPA hiện tại: 3.0/4.0</li>
-        <li>Đã hoàn thành các môn: Nhập môn Lập trình, Cấu trúc dữ liệu & Giải thuật, Cơ sở dữ liệu</li>
-        </ul>
-        <ul class="list-disc list-inside text-sm text-gray-600">
-        <li>Lập trình Web căn bản (HTML, CSS, JS)</li>
-        <li>Git & GitHub cơ bản</li>
-        </ul>
-      </div>
-      <!--Hoc Van-->
-
-      <!--Du An-->
-      <div class="card">
-        <h2 class="section-title">Dự Án</h2>
-        <div class="card-content">
-        <p class="font-semibold">Website Đặt Sân Cầu Lông</p>
-        <div class="github-link">
-            <img src="../assets/image/icons.jpg" alt="GitHub" class="github-icon">
-            <a href="https://github.com/Minh2005tv/Nhom.1.git" target="_blank">GitHub</a>
-        </div>
-        <p class="text-sm text-gray-600">
-            Website giúp người dùng đặt sân cầu lông trực tuyến, quản lý lịch sử đặt sân và thanh toán trực tuyến.
-        </p>
-        </div>
-        <div class="card-content">
-        <p class="font-semibold">Website Giặt Ủi</p>
-        <div class="github-link">
-            <img src="../assets/image/icons.jpg" alt="GitHub" class="github-icon">
-            <a href="https://github.com/minhphung2911/Web_GiatUi.git" target="_blank">GitHub</a>
-        </div>
-        <p class="text-sm text-gray-600">
-            Website cung cấp dịch vụ giặt ủi trực tuyến, cho phép người dùng đặt lịch và thanh toán trực tuyến.
-        </p>
+    <footer class="footer">
+        <p>© 2025 Trịnh Minh Tiến. Tất cả quyền được bảo lưu.</p>
+    </footer>
+    <div class="image-modal" id="imageModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">×</span>
+            <img class="modal-image" id="modalImage" src="" alt="Project Image">
         </div>
     </div>
-    <!--Du An-->
-    
+    <button class="back-to-top" id="back-to-top" title="Cuộn lên đầu trang"><i class="fas fa-arrow-up"></i></button>
+ <script src="../assets/js/tien.js"></script>
+        
 </body>
 </html>

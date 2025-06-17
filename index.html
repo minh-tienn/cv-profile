@@ -3,153 +3,291 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đội Ngũ Của Chúng Tôi</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        #particles-js {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: 0;
-        }
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4); /* Adjusted for dark theme */
-            z-index: 1;
-        }
-        .gradient-text {
-            background: linear-gradient(45deg, #D8B4FE, #A5F3FC); /* Light purple to light cyan gradient */
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .card {
-            background: #1A1A1A; /* Darker card for contrast */
-            border-radius: 10px;
-            padding: 1.5rem;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            min-height: 350px;
-            width: 100%;
-        }
-        .card:hover {
-            transform: scale(1.05) rotate(2deg); /* Motion effect */
-            box-shadow: 0 0 20px rgba(216, 180, 254, 0.8), 0 0 40px rgba(165, 243, 252, 0.6); /* Bright purple and cyan glow */
-            filter: brightness(1.1);
-        }
-        .avatar {
-            border-radius: 50%;
-            object-fit: cover;
-            width: 150px;
-            height: 150px;
-            margin: 0 auto;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card:hover .avatar {
-            transform: scale(1.1);
-            box-shadow: 0 0 15px rgba(216, 180, 254, 0.7); /* Bright purple glow for avatar */
-        }
-        .cv-button {
-            display: block;
-            margin: 1rem auto;
-            padding: 0.5rem 1.5rem;
-            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: 500;
-            transition: background 0.3s ease;
-            width: fit-content;
-        }
-        .cv-button:hover {
-            background: linear-gradient(45deg, #ff8787, #66e0d9);
-        }
-    </style>
+    <title>Trang Web Tổng Hợp Nhóm | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center relative">
+<body>
+
     <!-- Particle Background -->
-    <div id="particles-js"></div>
-    <div class="overlay"></div>
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
 
-    <!-- Header -->
-    <header class="text-center py-12 relative z-10">
-        <h1 class="text-4xl font-bold gradient-text">Nhóm của chúng tôi</h1>
-        <p class="mt-2 text-gray-300">Gặp gỡ những thành viên của chúng tôi</p>
-    </header>
-
-    <!-- Main Content -->
-    <main class="max-w-7xl px-6 py-8 relative z-10 w-full">
-        <div class="grid grid-cols-4 gap-8">
-            <!-- Member 1 -->
-            <div class="card">
-                <img src="assets/image/TrinhMinhTien.jpg" alt="Trịnh Minh Tiến" class="avatar mx-auto">
-                <h2 class="text-lg font-semibold mt-4 text-center">Trịnh Minh Tiến</h2>
-                <p class="text-gray-400 mt-2 text-center">Frontend Developer</p>
-                <p class="text-gray-500 text-sm mt-1 text-center">05/02/2005</p>
-                <p class="text-gray-500 text-sm mt-1 text-center">Sinh Viên Năm 2</p>
-                <a href="cv/TrinhMinhTien.html" class="cv-button">Xem CV</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch-text" data-text="Nhóm 14" data-aos="fade-up">Nhóm 14</h1>
+        </div>
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="600">
+            <div class="mouse">
+                <div class="wheel"></div>
             </div>
-            <!-- Member 2 -->
-            <div class="card">
-                <img src="assets/image/NguyenVanChiVi.jpg" alt="Nguyễn Văn Chí Vĩ" class="avatar mx-auto">
-                <h2 class="text-lg font-semibold mt-4 text-center">Nguyễn Văn Chí Vĩ</h2>
-                <p class="text-gray-400 mt-2 text-center">Fullstack Developer</p>
-                <p class="text-gray-500 text-sm mt-1 text-center">28/06/2005</p>
-                <p class="text-gray-500 text-sm mt-1 text-center">Sinh Viên Năm 2</p>
-                <a href="cv/NguyenVanChiVi.html" class="cv-button">Xem CV</a>
-            </div>
-            <!-- Member 3 -->
-            <div class="card">
-                <img src="assets/image/NguyenVanHao.jpg" alt="Nguyễn Văn Hào" class="avatar mx-auto">
-                <h2 class="text-lg font-semibold mt-4 text-center">Nguyễn Văn Hào</h2>
-                <p class="text-gray-400 mt-2 text-center">Backend Developer</p>
-                <p class="text-gray-500 text-sm mt-1 text-center">30/01/2005</p>
-                <p class="text-gray-500 text-sm mt-1 text-center">Sinh Viên Năm 2</p>
-                <a href="cv/NguyenVanHao.html" class="cv-button">Xem CV</a>
-            </div>
-            <!-- Member 4 -->
-            <div class="card">
-                <img src="assets/image/HongAnh.jpg" alt="Phan Hồng Anh" class="avatar mx-auto">
-                <h2 class="text-lg font-semibold mt-4 text-center">Phan Hồng Anh</h2>
-                <p class="text-gray-400 mt-2 text-center">Project Manager</p>
-                <p class="text-gray-500 text-sm mt-1 text-center">06/10/2005</p>
-                <p class="text-gray-500 text-sm mt-1 text-center">Sinh Viên Năm 2</p>
-                <a href="cv/PhanHongAnh.html" class="cv-button">Xem CV</a>
+            <div>
+                <span class="scroll-arrow">
+                    <span></span>
+                    <span></span>
+                </span>
             </div>
         </div>
-    </main>
+    </section>
 
-    <!-- Footer -->
-    <footer class="mt-auto w-full bg-gray-800 text-center py-4 relative z-10">
-        <p>© 2025 Đội Ngũ. All rights reserved.</p>
-    </footer>
+    <!-- Section Header Template -->
+    <template id="section-header-template">
+        <div class="section-header" data-aos="fade-up">
+            <h2><span></span></h2>
+            <p></p>
+        </div>
+    </template>
 
-    <!-- Particles.js Script -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Member Card Template -->
+    <template id="member-card-template">
+        <div class="member-card" data-aos="zoom-in">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="avatar">
+                        <img src="" alt="">
+                        <div class="status"></div>
+                    </div>
+                    <h3></h3>
+                    <p class="role"></p>
+                    <div class="card-details">
+                        <span><i class="fas fa-birthday-cake"></i></span>
+                        <span><i class="fas fa-user-graduate"></i></span>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div class="back-content">
+                        <h3>Giới thiệu</h3>
+                        <p class="member-bio"></p>
+                        <a href="" class="view-profile-btn">Xem CV <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Đội ngũ <span>của chúng tôi</span></h2>
+        </div>
+
+        <div class="members-container">
+            <!-- Member 1 -->
+            <div class="member-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="avatar">
+                            <img src="assets/image/TrinhMinhTien.jpg" alt="Trịnh Minh Tiến">
+                            <div class="status online"></div>
+                        </div>
+                        <h3>Trịnh Minh Tiến</h3>
+                        <p class="role">Fullstack Developer</p>
+                        <div class="card-details">
+                            <span><i class="fas fa-birthday-cake"></i> 05/02/2005</span>
+                            <span><i class="fas fa-user-graduate"></i> Sinh Viên Năm 2</span>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="back-content">
+                            <h3>Giới thiệu</h3>
+                            <p class="member-bio">Tôi là Trịnh Minh Tiến, đam mê phát triển web và ứng dụng full-stack. Tôi thích khám phá các công nghệ mới và xây dựng các giải pháp sáng tạo.</p>
+                            <a href="cv/TrinhMinhTien.html" class="view-profile-btn">Xem CV <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="member-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="avatar">
+                            <img src="assets/image/NguyenVanChiVi.jpg" alt="Nguyễn Văn Chí Vĩ">
+                            <div class="status online"></div>
+                        </div>
+                        <h3>Nguyễn Văn Chí Vĩ</h3>
+                        <p class="role">Fullstack Developer</p>
+                        <div class="card-details">
+                            <span><i class="fas fa-birthday-cake"></i> 28/06/2005</span>
+                            <span><i class="fas fa-user-graduate"></i> Sinh Viên Năm 2</span>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="back-content">
+                            <h3>Giới thiệu</h3>
+                            <p class="member-bio">Fullstack Developer với kỹ năng làm việc trên cả frontend và backend, chuyên sâu về Java, Spring Boot, Python, Django.</p>
+                            <a href="cv/NguyenVanChiVi.html" class="view-profile-btn">Xem CV <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="member-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="avatar">
+                            <img src="assets/image/NguyenVanHao.jpg" alt="Nguyễn Văn Hào">
+                            <div class="status online"></div>
+                        </div>
+                        <h3>Nguyễn Văn Hào</h3>
+                        <p class="role">Fullstack Developer</p>
+                        <div class="card-details">
+                            <span><i class="fas fa-birthday-cake"></i> 30/01/2005</span>
+                            <span><i class="fas fa-user-graduate"></i> Sinh Viên Năm 2</span>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="back-content">
+                            <h3>Giới thiệu</h3>
+                            <p class="member-bio">Fullstack Developer chuyên nghiệp với khả năng xây dựng các hệ thống mạnh mẽ, bảo mật và có khả năng mở rộng.</p>
+                            <a href="cv/NguyenVanHao.html" class="view-profile-btn">Xem CV <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 4 -->
+            <div class="member-card" data-aos="zoom-in" data-aos-delay="400">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="avatar">
+                            <img src="assets/image/HongAnh.jpg" alt="Phan Hồng Anh">
+                            <div class="status online"></div>
+                        </div>
+                        <h3>Phan Hồng Anh</h3>
+                        <p class="role">Project Manager</p>
+                        <div class="card-details">
+                            <span><i class="fas fa-birthday-cake"></i> 06/10/2005</span>
+                            <span><i class="fas fa-user-graduate"></i> Sinh Viên Năm 2</span>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="back-content">
+                            <h3>Giới thiệu</h3>
+                            <p class="member-bio">Project Manager với nhiều năm kinh nghiệm quản lý các dự án phức tạp và lãnh đạo nhóm hiệu quả.</p>
+                            <a href="cv/PhanHongAnh.html" class="view-profile-btn">Xem CV <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    <!-- Scripts -->
     <script>
-        particlesJS('particles-js', {
-            particles: {
-                number: { value: 80, density: { enable: true, value_area: 800 } },
-                color: { value: '#ffffff' },
-                shape: { type: 'circle' },
-                opacity: { value: 0.5, random: false },
-                size: { value: 3, random: true },
-                line_linked: { enable: true, distance: 150, color: '#ffffff', opacity: 0.4, width: 1 },
-                move: { enable: true, speed: 2, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
-            },
-            interactivity: {
-                detect_on: 'canvas',
-                events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true },
-                modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
-            },
-            retina_detect: true
+        // Particle randomization and canvas line drawing
+        document.addEventListener('DOMContentLoaded', () => {
+            // Randomize particle positions
+            const particles = document.querySelectorAll('.particle');
+            particles.forEach(particle => {
+                particle.style.setProperty('--rand-x', (Math.random() - 0.5) * 2);
+                particle.style.setProperty('--rand-y', (Math.random() - 0.5) * 2);
+            });
+            document.querySelector('.particles-container').classList.add('particles-ready');
+
+            // Canvas for connecting lines
+            const canvas = document.getElementById('particle-canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            // Resize canvas on window resize
+            window.addEventListener('resize', () => {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            });
+
+            // Animation loop for drawing lines
+            function animateLines() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                const particleElements = Array.from(particles);
+                const positions = particleElements.map(particle => {
+                    const rect = particle.getBoundingClientRect();
+                    return {
+                        x: rect.left + rect.width / 2,
+                        y: rect.top + rect.height / 2
+                    };
+                });
+
+                const maxDistance = 150; // Maximum distance for connecting lines
+                ctx.strokeStyle = 'rgba(255, 255, 255, 0.3)';
+                ctx.lineWidth = 1;
+
+                for (let i = 0; i < positions.length; i++) {
+                    for (let j = i + 1; j < positions.length; j++) {
+                        const dx = positions[i].x - positions[j].x;
+                        const dy = positions[i].y - positions[j].y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+                        if (distance < maxDistance) {
+                            ctx.beginPath();
+                            ctx.moveTo(positions[i].x, positions[i].y);
+                            ctx.lineTo(positions[j].x, positions[j].y);
+                            ctx.stroke();
+                        }
+                    }
+                }
+
+                requestAnimationFrame(animateLines);
+            }
+
+            animateLines();
+        });
+
+        // Active navigation link script (unchanged)
+        let currentHash = window.location.hash || '#home';
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.style.fontWeight = 'normal';
+            link.style.color = 'var(--text-muted)';
+        });
+        const activeLink = document.querySelector(`.nav-links a[href="${currentHash}"]`);
+        if (activeLink) {
+            activeLink.style.fontWeight = '600';
+            activeLink.style.color = 'var(--text-light)';
+        }
+        window.addEventListener('hashchange', function() {
+            currentHash = window.location.hash;
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.style.fontWeight = 'normal';
+                link.style.color = 'var(--text-muted)';
+            });
+            const activeLink = document.querySelector(`.nav-links a[href="${currentHash}"]`);
+            if (activeLink) {
+                activeLink.style.fontWeight = '600';
+                activeLink.style.color = 'var(--text-light)';
+            }
         });
     </script>
+
+    <!-- AOS Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true
+        });
+    </script>
+
+    <script src="script.js"></script>
 </body>
 </html>
